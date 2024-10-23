@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chua Computer Store</title>
+    <style>
+      .bg-image {
+        background-image: url("background.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body class="bg-image">
+    <div class="bg-secondary text-white text-center p-2 fs-3 mb-4">
+      Computer Shop
+    </div>
+    <div class="container mt-2">
+      <div
+        id="notification"
+        class="alert alert-success d-none"
+        role="alert"
+      ></div>
+      <div class="row">
+        <div class="col-md-4 mb-3 d-flex">
+          <div class="card flex-fill">
+            <img src="laptop.jpg" class="card-img-top" alt="Product Image" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Predator Helios 300 VR Reality 15.6" FHD IPS Gaming Laptop
+              </h5>
+              <p class="card-text">Price: $1500.00</p>
+              <p class="card-text" id="stock1">In Stock: 5</p>
+              <button class="btn btn-primary mt-auto" onclick="addToCart(1)">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 d-flex">
+          <div class="card flex-fill">
+            <img
+              src="headphones.webp"
+              class="card-img-top"
+              alt="Product Image"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Razer BlackShark V2 X Gaming Headphones
+              </h5>
+              <p class="card-text">Price: $100.00</p>
+              <p class="card-text" id="stock2">In Stock: 10</p>
+              <button class="btn btn-primary mt-auto" onclick="addToCart(2)">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 d-flex">
+          <div class="card flex-fill">
+            <img src="keyboard.jpg" class="card-img-top" alt="Product Image" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Black Mechanical Keyboard On White Background Blue Neon Light
+              </h5>
+              <p class="card-text">Price: $50.00</p>
+              <p class="card-text" id="stock3">In Stock: 20</p>
+              <button class="btn btn-primary mt-auto" onclick="addToCart(3)">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="bg-secondary text-white text-center p-2">
+        <div class="container">
+          <p>Contact Us | Social Media Platform</p>
+          <p>
+            <a
+              href="https://www.facebook.com/jannochristianchua"
+              class="btn btn-primary"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/jannochristian"
+              class="btn btn-danger"
+            >
+              Instagram
+            </a>
+          </p>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>
